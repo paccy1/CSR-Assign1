@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- Header with Responsive Navbar -->
     <header>
         <nav class="navbar">
             <div class="navbar__logo">
@@ -25,11 +24,12 @@
                 <li><a href="#projects">Project</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
-            <a href="/resume.pdf" class="btn--resume" download>
-                Resume
-                <i class="fas fa-download" aria-hidden="true"></i>
-            </a>
-            <!-- Hamburger button (visible on small screens only) -->
+            <div class="navbar__links">
+                <a href="/resume.pdf" class="btn--resume" download>
+                    Resume
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                </a>
+            </div>
             <button class="hamburger" aria-label="Toggle Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -44,20 +44,20 @@
         <!-- Intro Section -->
         <section class="intro">
             <div class="intro__text">
-                <h1>
-                    Hello, I’m <span class="highlight highlight--solid">Evren Shah</span>.
-                </h1>
-                <h2>
+                <P>
+                    <span class="highlight highlight--text1">Hello, I’m </span><span class="highlight highlight--solid">Evren Shah.</span>
+                </P>
+                <P>
                     <span class="highlight highlight--solid">Frontend</span>
                     <span class="highlight highlight--outline">Developer</span>
-                </h2>
-                <h3>
-                    Based In <span class="highlight highlight--solid">India</span>.
-                </h3>
-                <p>
-                    I’m Evren Shah. Lorem ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem ipsum has been the industry’s standard dummy
-                    text ever since the 1500s.
+                </P>
+                <P>
+                    <span class="highlight highlight--text2">Based In </span><span class="highlight highlight--solid">India</span>.
+                </P>
+                <p class="banner-p">
+                    I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to specimen book.
                 </p>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -78,7 +78,6 @@
                     <h2 class="skills-header1">My <span class="skills-header2">Skills</span></h2>
                 </div>
                 <div class="skills-grid">
-                    <!-- Row 1 -->
                     <div class="skill-item">
                         <i class="fa-brands fa-git-alt"></i> <br>
                         <p>Git</p>
@@ -92,16 +91,15 @@
                         <p>Sass/Scss</p>
                     </div>
                     <div class="skill-item">
-                        <i class="fa-brands fa-Next"></i> <br>
+                        <i class="fa-stack fas fa-rocket"></i> <br>
 
                         <br>
                         <p>Nest.Js</p>
                     </div>
                     <div class="skill-item">
-                        <i class="fa-brands fas fa-history"></i> <br>
+                        <i class="fa-brands fab fa-node-js"></i> <br>
                         <p>Storybook</p>
                     </div>
-                    <!-- Row 2 -->
                     <div class="skill-item">
                         <i class="fa-stack fas fa-rocket"></i>
                         <p>Socket.Io</p>
@@ -195,7 +193,7 @@
                         <span class="quote-icon"><i class="fa-brands fas fa-quote-right"></i></span>
                     </div>
                     <p class="testimonial-text">
-                        I recently had to jump on 10+ calls across eight countries to find the right owner.
+                        I recently had to jump on 10+ different calls across eight different countries to find the right owner.
                     </p>
                     <div><img src="images/Rectangle 7322.png" alt="rectangle" /></div>
                     <h3 class="testimonial-name">Evren Shah</h3>
@@ -238,20 +236,34 @@
                     <div class="about-header">
                         <h2 class="about-header1">About <span class="about-header2">Me</span></h2>
                     </div>
-                    <p>
-                        I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js
-                        &amp; Node.js). I love bringing digital products to life with great user experience and pixel
-                        perfect design.
-                    </p>
-                    <p>
-                        Since 2015, I've grown as a developer by embracing new challenges and technologies. Now, in my
-                        thirties, I build cutting-edge applications using Next.js, TypeScript, Nestjs, Tailwindcss,
-                        Supabase, and more.
-                    </p>
-                    <p>
-                        When I'm not in development mode, you'll find me on Twitter or Indie Hacker, following startups
-                        or enjoying free time.
-                    </p>
+                    <div class="about-p">
+                        <p>
+                            I'm a passionate, self-proclaimed designer who specializes in full stack development
+                            (React.js &
+                            Node.js).
+                            I am very enthusiastic about bringing the technical and visual aspects of digital products
+                            to
+                            life. User experience,
+                            pixel perfect design, and writing clear, readable, highly performant code matters to me.
+                        </p>
+
+                        I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve
+                        as a developer,
+                        taking on new challenges and learning the latest technologies along the way. Now, in my early
+                        thirties, 7 years after
+                        starting my web development journey, I'm building cutting-edge web applications using modern
+                        technologies such as Next.js,
+                        TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+                        <p>
+                            When I'm not in full-on developer mode, you can find me hovering around on twitter or on
+                            indie
+                            hacker,
+                            witnessing the journey of early startups or enjoying some free time. You can
+                            follow me on Twitter where I share tech-related bites and build in public, or you can follow
+                            me
+                            on GitHub.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -263,7 +275,6 @@
                     <h2 class="project-header1">My <span class="project-header2">Projects</span></h2>
                 </div>
                 <div class="projects-grid">
-                    <!-- Project 01: Image on Left, Text on Right -->
                     <div class="project-card odd">
                         <div class="project-image">
                             <img src="images/image 771.png" alt="Crypto Screener Application" />
@@ -275,7 +286,6 @@
 
                         </div>
                     </div>
-                    <!-- Project 02: Text on Left, Image on Right -->
                     <div class="project-card even">
                         <div class="project-content">
                             <div class="project-index">
@@ -324,16 +334,17 @@
             </div>
             <div class="contact-contact">
                 <div class="side-header">
-                    <h2>Let's <strong class="highlight highlight--outline">talk</strong> for <br /> Something special</h2>
+                    <h2>Let's <strong class="highlight highlight--outline">talk</strong> for <br /> Something special
+                    </h2>
                     <p class="contact-p">
                         I seek to push the limits of creativity to create engaging and memorable interactive
                         experiences.
                     </p>
                 </div>
                 <div class="contact-info">
-                <p class="contact-p1" >Youremail@gmail.com </p>
-                <p class="contact-p2">1234567890</p>
-            </div>
+                    <p class="contact-p1">Youremail@gmail.com </p>
+                    <p class="contact-p2">1234567890</p>
+                </div>
             </div>
         </div>
     </section>
